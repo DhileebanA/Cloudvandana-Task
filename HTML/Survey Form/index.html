@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+
+    <!-- Bootstrap link and script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Get Details from a customer -->
+    <form onsubmit="handleSurvey(event)">
+        <h1 class="text-center text-light">Customer Survey Form</h1>
+        <div class="container">
+            Enter your Name
+            <div class="row">
+                <div class="col-lg-6 col-md-6"><input type="text" id="fName" pattern="[A-Za-z]{2,}" placeholder="First Name" class="w-100" required></div>
+                <div class="col-lg-6 col-md-6"><input type="text" id="lName" pattern="[A-Za-z]{1,}" placeholder="Last Name" class="w-100" required></div>
+            </div>
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" class="w-100" required>
+            <div>Where are you from?</div>
+            <select name="country" id="country" class="py-1 w-100" required>
+                <option value="">Your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+                <option value="Russia">Russia</option>
+                <option value="China">China</option>
+            </select>
+            <div>Gender</div>
+            <input type="radio" id="male" name="gender" value="male" required><label for="male" class="fw-normal">Male</label>
+            <span class="mx-4"><input type="radio" id="female" name="gender" value="female" required><label for="female" class="fw-normal">Female</label></span>
+            <input type="radio" id="other" name="gender" value="other" required><label for="other" class="fw-normal">Other</label>
+            <div>Profession</div>
+            <input type="text" id="prof" class="w-100" required>
+            <div>Email</div>
+            <input type="email" id="email" class="w-100" required>
+            <div>Mobile Number</div>
+            <input type="tel" id="mob" class="w-100" pattern="[6789][0-9]{9}" required>
+            <input type="submit" class="btn btn-success" value="Submit"> <input type="reset" class="btn btn-danger" value="Reset">
+        </div>
+    </form>
+
+    <!-- For Popup Screen -->
+    <div id="popup" class="position-absolute" onclick="hideDetails()"></div>
+
+    <!-- External Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>

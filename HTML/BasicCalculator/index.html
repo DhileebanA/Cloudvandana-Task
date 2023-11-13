@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic calculator</title>
+
+    <!-- Bootstrap link and script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark-subtle">
+    <h1 class="mb-4">Basic Calculator</h1>
+    <table cellpadding="25px" class="text-center">
+        <tr><th class="bg-white text-start" colspan="3" ><input type="text" pattern="[0-9]" id="screen" class="w-100" ></th><th class="button px-4 clearBtnColor" id="clear" >AC</th></tr>
+        <tr><td id="nine" class="button" >9</td><td id="eight" class="button" >8</td><td id="seven" class="button" >7</td><td id="add" class="button operatorColor" >+</td></tr>
+        <tr><td id="four" class="button" >4</td><td id="five" class="button" >5</td><td id="six" class="button" >6</td><td id="subtract" class="button operatorColor" >-</td></tr>
+        <tr><td id="one" class="button" >1</td><td id="two" class="button" >2</td><td id="three" class="button" >3</td><td id="divide" class="button operatorColor" >÷</td></tr>
+        <tr><td id="dot" class="button" >.</td><td id="zero" class="button" >0</td><td id="equal" class="button" >=</td><td id="multiply" class="button operatorColor" >x</td></tr>
+    </table>
+
+    <!-- External Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>

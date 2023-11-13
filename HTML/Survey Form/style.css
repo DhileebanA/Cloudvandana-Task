@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Voltaire&display=swap');
+body{
+    background-color: rgb(51, 155, 187);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+input, select{
+    margin: 5px;
+}
+.btn{
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    background-color: white;
+    padding: 30px;
+    font-family: 'Voltaire', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px 1px rgb(29, 81, 97);
+}
+.popup{
+    background-color: rgba(65, 65, 65, 0.6);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

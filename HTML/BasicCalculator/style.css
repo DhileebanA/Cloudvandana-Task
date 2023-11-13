@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+table{
+    width: 35%;
+    box-shadow: 10px 10px 20px 0 grey;
+}
+#screen{
+    border: none;
+    outline: none;
+    font-size: x-large;
+}
+.button{
+    cursor:default;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.button:hover{
+    background-color: rgb(34, 34, 54);
+}
+.clearBtnColor{
+    background-color: rgb(0, 151, 144);
+}
+.clearBtnColor:hover{
+    background-color: rgb(226, 11, 11);
+}
+.operatorColor{
+    background-color: dimgray;
+}
+.operatorColor:hover{
+    background-color: rgb(150, 150, 150);
+}
